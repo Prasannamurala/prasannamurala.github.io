@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <!--Marquee-->
+    <marquee behavior="" direction="" class="text-light">VKR, VNB & AGK College Of Engineering</marquee>
+    <div style="background-color: aliceblue;">
+    <img src="assests/home.png" alt="">
+</div>
+
+
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav"> 
+        <a class="navbar-brand" href="#">VKR, VNB & AGK College Of Engineering</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link">FAQ's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactus">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--Carouel-->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <!--Carousel Indicators-->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!--Carousel images-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Assests/vkr4.jpg" class="d-block w-100 img-fluid" alt="..." id="a">
+          </div>
+          <div class="carousel-item">
+            <img src="/Assests/vkr3.jpg" class="d-block w-100 img-fluid" alt="..." id="a">
+          </div>
+          <div class="carousel-item">
+            <img src="/Assests/vkr2.jpg" class="d-block w-100 img-fluid" alt="..." id="a">
+          </div>
+        </div>
+        <!--Carousel Previous and Next Buttons-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br><br>
+
+
+    <!--Application Form-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assests/vkr1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6" id="register">
+
+                <div class="card">
+                        <div class="card-header">
+                            <h2>Student Registration Form</h2>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" class="form-control" id="dob">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <textarea class="form-control" id="address" rows="3" placeholder="Enter address"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select class="form-control" id="gender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br><br>
+
+    <p class="h3 ">OUR TEAM</p>
+    <br>
+    <!--Vertical Cards-->
+    <div class="container">
+        <!--Row-->
+        <div class="row">
+          <!--Col 1-->
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;" id="cr">
+              <img src="assests/prince.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. S.H.V PRASADA RAO M.Tech., Ph.D.</h5>
+                <p class="card-text">Principal <br>
+                    Email: principalnh2008@gmail.com <br>
+                    Contact: 9246542188, 9440938301</p>
+                    <a href="#" class="btn btn-primary">More</a>
+              </div>
+            </div>
+          </div>
+          <!--Col 2-->
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;" id="cr">
+              <img src="assests/director.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mr. B.Kalyan Kumar B.Tech (MECH), M.S.(I.T)-Australia</h5>
+                <p class="card-text">Director <br>
+                    Email: kalyankumarbolla@gmail.com <br>
+                    Contact: 9154605555</p>
+                <a href="#" class="btn btn-primary">More</a>
+              </div>
+            </div>
+          </div>
+          <!--Col 3-->
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;" id="cr">
+              <img src="assests/top.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mr. S Naveen Kumar MBA(HR, Finance)
+                </h5>
+                <p class="card-text">Training & Placement Officer <br>
+                    Email: tpo@vkrvnbcoe.org <br>
+                    Contact: 95533 33450</p>
+                    <a href="#" class="btn btn-primary">More</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Col 4-->
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;" id="cr">
+              <img src="assests/incharge.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mr. K D V L SYAM SUNDAR M.Sc,M.Phil,(Ph.D)</h5>
+                <p class="card-text">Admissions Incharge <br>
+                    Email: srisyam31@gmail.com <br>
+                    Contact: 9849518072</p>
+                    <a href="#" class="btn btn-primary">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+
+    <!--List Of COurses-->
+
+
+
+    <!--Accordian-->
+    <div class="container"  id="faq">
+        <p class="h3">Frequently Asked Questions</p>
+        <div class="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What programs does the college offer?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Our college offers a variety of undergraduate and postgraduate programs across different fields including Arts, Science, Engineering, Business, and more.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How can I apply for admission?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        You can apply for admission through our online application portal available on the college website. Detailed instructions and requirements are provided on the application page.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is the tuition fee?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        The tuition fee varies depending on the program and level of study. Please refer to the tuition fees section on our website for detailed information.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Are there any scholarships available?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Yes, our college offers a range of scholarships and financial aid options for eligible students. You can find more information on the scholarships page of our website.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How can I contact the college for further inquiries?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        You can contact us through the contact form on our website, via email at contact@college.edu, or by phone at (123) 456-7890. Our office hours are Monday to Friday, 9 AM to 5 PM.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Contact Us-->
+
+
+    
+    <div class="container-fluid" id="cont">
+        <hr>
+    <div class="container" id="contactus">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <h2>Contact Information</h2>
+                <p>If you have any questions, please feel free to reach out to us at:</p>
+                <ul class="list-unstyled">
+                    <li><span><i class="fa-solid fa-location-dot m-2"></i><strong>Address:</strong>Eluru Road,
+                        Gudivada-521301,
+                        Krishna District,
+                        Andhra Pradesh,
+                        INDIA.</span></li>
+                    <li><span><i class="fa-solid fa-phone m-2"></i><strong>Phone:</strong>  91-08674-242188,242189</span></li>
+                    <li><span><i class="fa-solid fa-envelope m-2"></i><strong>Email:</strong> vkrvnbengineering@gmail.com</span></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <h2>Contact Form</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
