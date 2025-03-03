@@ -1,0 +1,22 @@
+#cont{
+    background-color: #fbe9d0;
+}
+body{
+    background-color: #90aead;
+}
+#cr{
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+}
+#cr {
+    transition: all 1s;
+}
+#cr:hover {
+    transform: scale(1.05,1.05);
+}
+marquee{
+    background-color: #244855;
+}
+#nav{
+    background-color: #874f41;
+}
